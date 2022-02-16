@@ -1,0 +1,9 @@
+.main {
+      display: flex;
+      height: 30vh;
+}
+
+.image-main img {
+      height: 4rem;
+      margin: 0 1rem;
+}
