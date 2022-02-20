@@ -3,12 +3,16 @@
       margin: 0;
 }
 
+body {
+      background: #DFD5A5;
+}
+
 header {
       height: 8vh;
       width: 100%;
       display: flex;
       justify-content: space-between;
-      background: #000;
+      background: rgba(1, 8, 36, 0.905);
       color: #fff;
       align-items: center;
 }
@@ -30,7 +34,6 @@ header {
       list-style-type: none;
       display: flex;
       width: 100%;
-      align-items: center;
       justify-content: right;
 }
 
@@ -41,14 +44,40 @@ header {
 .nav-options a {
       text-decoration: none;
       padding: 0.5rem;
-      background: rgb(196, 33, 33);
+      background: #727072;
+      /*background: #9a031fec;*/
       color: #fff;
       border-radius: 2px;
+      transition: 0.5s;
+}
+
+.nav-options a:hover {
+      background: #FE654F;
 }
 
 .main {
       display: flex;
+      justify-content: space-around;
+      gap: 3rem;
       height: 30vh;
+}
+
+.text-main {
+      color: rgba(0, 0, 0, 0.946);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      margin-left: 2rem;
+}
+
+.text-main p {
+      font-size: 1.2rem;
+}
+
+
+.image-main {
+      display: flex;
+      align-items: center;
 }
 
 .image-main img {
