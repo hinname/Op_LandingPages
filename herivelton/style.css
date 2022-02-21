@@ -63,7 +63,7 @@ header {
       border: 1px solid #FE654F;
 }
 
-.main {
+.banner {
       display: flex;
       justify-content: space-between;
       gap: 3rem;
@@ -72,19 +72,20 @@ header {
       background:#000
 }
 
-.text-main {
+.text-banner {
       color: #fafafa;
       display: flex;
       flex-direction: column;
+      width: 70%;
       justify-content: center;
       margin-left: 3rem;
 }
 
-.text-main p {
+.text-banner p {
       font-size: 1.2rem;
 }
 
-.text-main a {
+.text-banner a {
       text-decoration: none;
       font-family: 'Bebas Neue', cursive;
       font-size: 1.5rem;
@@ -97,21 +98,24 @@ header {
       transition: 0.5s;
 }
 
-.text-main a:hover {
+.text-banner a:hover {
       background: #FE654F;
       color: #fafafa;
 }
 
 
-.image-main {
+.image-banner {
       display: flex;
       align-items: center;
+      justify-content: center;
       background: url("./assets/background.png") no-repeat center;
       height: 100%;
+      width: 100%;
+      border-radius: 2px;
 }
 
-.image-main img {
-      height: 4rem;
+.image-banner img {
+      max-height: 6rem;
       margin: 0 1rem;
 }
 
@@ -128,4 +132,47 @@ header {
       width: 100%;
       text-align: center;
       color: #fafafa;
+      font-size: 1.5rem;
+      font-weight: 700;
+}
+
+.benefits {
+      width: 40%;
+      margin-top: 5rem;
+}
+
+
+.benefits ul {
+      display: flex;
+      gap: 3rem;
+      list-style-type: none;
+}
+
+.benefits li {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      width: 100%;
+      gap: 1rem;
+}
+
+.benefits li p {
+      text-align: center;
+}
+
+.benefits li img {
+      height: 3rem;
+      color: rgba(1, 8, 36, 0.905);
+}
+
+.trophy {
+      -webkit-mask: url("./assets/icons/trophy-solid.svg") no-repeat center;
+      mask: url("./assets/icons/trophy-solid.svg") no-repeat center;
+      background: rgba(1, 8, 36, 0.905);
+}
+
+.medal {
+      -webkit-mask: url("./assets/icons/medal-solid.svg") no-repeat center;
+      mask: url("./assets/icons/medal-solid.svg") no-repeat center;
+      background: rgba(1, 8, 36, 0.905);
 }
