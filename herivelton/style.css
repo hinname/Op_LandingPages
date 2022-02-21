@@ -5,12 +5,19 @@
 
 body {
       background: #DFD5A5;
+      font-family: 'Roboto', sans-serif;
+}
+
+.container {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
 }
 
 header {
       height: 8vh;
-      width: 100%;
       display: flex;
+      width: 100%;
       justify-content: space-between;
       background: rgba(1, 8, 36, 0.905);
       color: #fff;
@@ -27,7 +34,6 @@ header {
       width: 100%;
       display: flex;
       justify-content: right;
-      
 }
 
 .nav-options ul {
@@ -44,43 +50,82 @@ header {
 .nav-options a {
       text-decoration: none;
       padding: 0.5rem;
-      background: #727072;
+      border: 1px solid #727072;
       /*background: #9a031fec;*/
-      color: #fff;
+      color: #a3a2a2;
       border-radius: 2px;
       transition: 0.5s;
 }
 
 .nav-options a:hover {
       background: #FE654F;
+      color: #fff;
+      border: 1px solid #FE654F;
 }
 
 .main {
       display: flex;
-      justify-content: space-around;
+      justify-content: space-between;
       gap: 3rem;
-      height: 30vh;
+      height: 75vh;
+      width: 100%;
+      background:#000
 }
 
 .text-main {
-      color: rgba(0, 0, 0, 0.946);
+      color: #fafafa;
       display: flex;
       flex-direction: column;
       justify-content: center;
-      margin-left: 2rem;
+      margin-left: 3rem;
 }
 
 .text-main p {
       font-size: 1.2rem;
 }
 
+.text-main a {
+      text-decoration: none;
+      font-family: 'Bebas Neue', cursive;
+      font-size: 1.5rem;
+      padding: 1rem;
+      width: 30%;
+      margin-top: 3vh;
+      border: 1px solid #FE654F;
+      color: #FE654F;
+      border-radius: 2px;
+      transition: 0.5s;
+}
+
+.text-main a:hover {
+      background: #FE654F;
+      color: #fafafa;
+}
+
 
 .image-main {
       display: flex;
       align-items: center;
+      background: url("./assets/background.png") no-repeat center;
+      height: 100%;
 }
 
 .image-main img {
       height: 4rem;
       margin: 0 1rem;
+}
+
+.mid {
+      background: rgba(1, 8, 36, 0.905);
+      width: 100%;
+      height: 20vh;
+      margin-top: 5rem;
+      display: flex;
+      align-items: center;
+}
+
+.mid p {
+      width: 100%;
+      text-align: center;
+      color: #fafafa;
 }
