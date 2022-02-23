@@ -108,7 +108,7 @@ header {
       display: flex;
       align-items: center;
       justify-content: center;
-      background: url("./assets/background.png") no-repeat center;
+      background: url("./assets/images/background.png") no-repeat center;
       height: 100%;
       width: 100%;
       border-radius: 2px;
@@ -116,6 +116,7 @@ header {
 
 .image-banner img {
       max-height: 6rem;
+      min-height: 2rem;
       margin: 0 1rem;
 }
 
@@ -198,12 +199,24 @@ footer {
       height: 30vh;
       display: flex;
       justify-content: space-between;
+      align-items: center;
       background: rgba(1, 8, 36, 0.905);
       color: #fafafa;
 }
 
+.media-text {
+      text-align: center;
+}
+
 .company-info {
-      margin: 3rem;
+      margin: 2.5rem 3rem;
+}
+
+.social-media {
+      display: flex;
+      margin-top: 1rem;
+      gap: 1.5rem;
+      justify-content: center;
 }
 
 
@@ -211,4 +224,54 @@ footer {
       -webkit-mask: url("./assets/icons/facebook-f-brands.svg") no-repeat center;
       mask: url("./assets/icons/facebook-f-brands.svg") no-repeat center;
       background: #fafafa;
+}
+
+.twitter-icon {
+      -webkit-mask: url("./assets/icons/twitter-brands.svg") no-repeat center;
+      mask: url("./assets/icons/twitter-brands.svg") no-repeat center;
+      background: #fafafa;
+}
+
+.insta-icon {
+      -webkit-mask: url("./assets/icons/instagram-brands.svg") no-repeat center;
+      mask: url("./assets/icons/instagram-brands.svg") no-repeat center;
+      background: #fafafa;
+}
+
+.linkedin-icon {
+      -webkit-mask: url("./assets/icons/linkedin-brands.svg") no-repeat center;
+      mask: url("./assets/icons/linkedin-brands.svg") no-repeat center;
+      background: #fafafa;
+}
+
+.github-icon {
+      -webkit-mask: url("./assets/icons/github-brands.svg") no-repeat center;
+      mask: url("./assets/icons/github-brands.svg") no-repeat center;
+      background: #fafafa;
+}
+
+.company-pages {
+      display: flex;
+      justify-content: space-around;
+      margin-top: 2rem;
+}
+
+.company-pages a {
+      text-decoration: none;
+      color: #fafafa;
+      transition: 0.5s;
+}
+
+.company-pages a:hover {
+      color: #b3b3b3;
+      
+}
+
+.personal-info {
+      margin: 2.5rem 3rem;
+}
+
+.personal-footer-text {
+      text-align: center;
+      margin-top: 2rem;
 }
