@@ -1,3 +1,5 @@
+
+
 * {
       padding: 0;
       margin: 0;
@@ -138,7 +140,7 @@ header {
 }
 
 .benefits {
-      width: 40%;
+      width: 50%;
       margin-top: 5rem;
 }
 
@@ -196,12 +198,21 @@ footer img {
 footer {
       margin-top: 7rem;
       width: 100%;
-      height: 30vh;
+      height: 35vh;
       display: flex;
-      justify-content: space-between;
-      align-items: center;
+      flex-direction: column;
+      justify-content: center;
       background: rgba(1, 8, 36, 0.905);
       color: #fafafa;
+}
+
+.info {
+      width: 100%;
+      display: flex;
+      height: 30vh;
+      align-items: center;
+      justify-content: space-between;
+      align-items: center;
 }
 
 .media-text {
@@ -209,7 +220,7 @@ footer {
 }
 
 .company-info {
-      margin: 2.5rem 3rem;
+      margin: 0 3rem;
 }
 
 .social-media {
@@ -268,10 +279,25 @@ footer {
 }
 
 .personal-info {
-      margin: 2.5rem 3rem;
+      margin: 0 3rem;
 }
 
 .personal-footer-text {
       text-align: center;
-      margin-top: 2rem;
+}
+
+
+@media screen and (max-width: 1024px) {
+      .image-banner img {
+            height: 6vw;
+      }
+
+      .image-banner {
+            width: 90%;
+      }
+
+      .text-banner a {
+            width: 70%;
+      }
+
 }
