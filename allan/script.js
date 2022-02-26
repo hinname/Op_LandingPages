@@ -29,9 +29,13 @@ function purpleModel() {
   blackOption.style.borderWidth = normalBallBorder
 
   allModels.style.display = 'none'
+  allModels.style.opacity = '0'
   purpleImage.style.display = 'flex'
+  purpleImage.style.opacity = '1'
   whiteImage.style.display = 'none'
+  whiteImage.style.opacity = '0'
   blackImage.style.display = 'none'
+  blackImage.style.opacity = '0'
 
   colorName.textContent = 'Purple-ish'
 }
@@ -50,9 +54,13 @@ function whiteModel() {
   blackOption.style.borderWidth = normalBallBorder
 
   allModels.style.display = 'none'
+  allModels.style.opacity = '0'
   purpleImage.style.display = 'none'
+  purpleImage.style.opacity = '0'
   whiteImage.style.display = 'flex'
+  whiteImage.style.opacity = '1'
   blackImage.style.display = 'none'
+  blackImage.style.opacity = '0'
 
   colorName.textContent = 'Clearly White'
 }
@@ -71,10 +79,13 @@ function blackModel() {
   blackOption.style.borderWidth = bigBallBorder
 
   allModels.style.display = 'none'
+  allModels.style.opacity = '0'
   purpleImage.style.display = 'none'
+  purpleImage.style.opacity = '0'
   whiteImage.style.display = 'none'
+  whiteImage.style.opacity = '0'
   blackImage.style.display = 'flex'
+  blackImage.style.opacity = '1'
 
   colorName.textContent = 'Just Black'
-  return colorName
 }

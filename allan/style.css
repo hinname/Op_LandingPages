@@ -80,18 +80,12 @@ header {
 
 .cart.button {
   border-color: #4caf50;
-}
-
-.cart p {
   color: #4caf50;
 }
 
 .cart:hover {
-  border-color: rgb(48, 141, 48) !important;
-}
-
-.cart p:hover {
-  color: rgb(48, 141, 48) !important;
+  background-color: #4caf50;
+  color: white !important;
 }
 
 /* Showcase Area*/
@@ -208,6 +202,8 @@ header h4 {
 #bigPhoneImage img {
   width: 80%;
   display: none;
+  transition: opacity 1s ease-in-out;
+  opacity: 0;
 }
 
 #bigPhoneImage #allModels {
