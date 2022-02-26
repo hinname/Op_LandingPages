@@ -29,7 +29,7 @@ function purpleModel() {
   blackOption.style.borderWidth = normalBallBorder
 
   allModels.style.display = 'none'
-  allModels.style.opacity = '0'
+  allModels.style. = '0'
   purpleImage.style.display = 'flex'
   purpleImage.style.opacity = '1'
   whiteImage.style.display = 'none'

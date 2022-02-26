@@ -1,33 +1,35 @@
 header {
-      text-align: center;
+  text-align: center;
 }
 
 .landingPages a {
-      text-decoration: none;
-      font-size: 1.2rem;
-      color: rgb(52, 110, 216);
-      transition: 0.2s;
+  text-decoration: none;
+  font-size: 1.2rem;
+  color: rgb(52, 110, 216);
+  transition: 0.2s;
 }
 
 .landingPages {
-      margin: 3rem 0rem;
-      display: flex;
-      flex-direction: column;
-      width: 100%;
-      justify-content: center;
-      align-items: center;
+  margin: 3rem 0rem;
+  display: flex;
+  flex-direction: column;
+  width: 100%;
+  justify-content: center;
+  align-items: center;
 }
 
 .landingPages ul {
-      list-style-type: none;
-      padding: 0;
-      margin: 0;
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
 }
 
 .landingPages ul li {
-      padding: 0.5rem 5px;
+  padding: 0.5rem 5px;
 }
 
 .landingPages a:hover {
-      color: rgb(24, 62, 133);
+  color: rgb(24, 62, 133);
 }
