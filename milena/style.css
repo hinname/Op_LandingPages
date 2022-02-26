@@ -1,0 +1,142 @@
+@charset "UTF-8";
+
+@import url('https://fonts.googleapis.com/css2?family=Anton&display=swap');
+
+@font-face {
+    font-family: fonte-logo;
+    src: url(triple_dot_digital-7.ttf);
+  }
+
+:root {
+    --fonte-conteudo: 'Anton', sans-serif;;
+    --fonte-destaque: var(--fonte-logo);
+    --cor1: #149DE0;
+    --cor2: #2B2445;
+    --cor3: #D5E5FA;
+
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    background-color: var(--cor3);
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+header {
+    background-image: linear-gradient(to bottom, var(--cor2), var(--cor1));
+    min-height: 100px;
+    text-align: center;
+    padding-top: 30px;
+    
+}
+
+header > h1 {
+    font-family: fonte-logo;
+    font-size: 6em;
+    color: white;
+    text-align: center;
+    font-size: 40px;
+    padding: 25px; 
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.438);
+    cursor: pointer;
+}
+
+header > p {
+    color: white;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.24);
+    padding: 10px;
+}
+
+nav {
+    background-color: var(--cor1);
+    text-align: center;
+    padding: 10px;
+}
+
+nav > a {
+    font-weight: bold;
+    text-decoration: none;
+    padding: 10px;
+    color: white;
+    transition-duration: .5s;
+    border-radius: 7px;
+    text-shadow: 2px 2px 0px rgba(0, 0, 0, 0.315);
+}
+
+nav > a:hover {
+
+    background-color: var(--cor2);
+    color: #149DE0;
+    
+}
+
+main > h1 {
+    font-family: var(--fonte-conteudo);
+    font-size: 2em;
+    font-weight: normal;
+    color: var(--cor2);
+    margin: 10px;
+}
+
+main h2 {
+    font-family: var(--fonte-conteudo);
+    font-size: 25px;
+    font-weight: normal;
+    color: var(--cor2);
+    margin: 10px;
+}
+
+main > h3 {
+    font-family: var(--fonte-conteudo);
+    font-size: 20px;
+    font-weight: normal;
+    color: var(--cor2);
+    margin: 10px;
+}
+
+main > p {
+    text-indent: 20px;
+    line-height: 25px;
+}
+
+main > ul {
+    background-color: var(--cor3);
+    padding: 5px;
+    list-style-position: inside;
+    border-radius: inherit;
+
+}
+
+
+img {
+    width: 50%;
+    display: block;
+    margin: auto;
+}
+
+main {
+    margin: auto;
+    min-width: 300px;
+    max-width: 1000px;
+    margin-bottom: 30px;
+    padding: 20px;
+    background-color: white;
+    box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.418);
+    border-bottom-left-radius: 10px;
+    border-bottom-right-radius: 10px;
+}
+
+
+footer {
+    font-weight: bolder;
+    color: white;
+    font-size: 10px;
+    padding: 10px;
+    background-color: var(--cor1);
+    text-align: center;
+    cursor: pointer;
+}
