@@ -57,6 +57,7 @@ header {
       color: #a3a2a2;
       border-radius: 2px;
       transition: 0.5s;
+      
 }
 
 .nav-options a:hover {
@@ -293,11 +294,86 @@ footer {
       }
 
       .image-banner {
-            width: 90%;
+            width: 100%;
       }
+
 
       .text-banner a {
             width: 70%;
       }
 
+}
+
+@media screen and (max-width: 425px) {
+
+      header {
+            height: 12vh;
+            width: 100%;
+      }
+      .logo {
+            width: 10vw;
+            font-size: 1.3rem;
+      }
+
+      p {
+            font-size: 0.9rem;
+      }
+
+      .nav-options a {
+            font-size: 0.9rem;
+      }
+
+      .nav-options ul li {
+            margin-right: 1rem;
+      }
+
+      .banner {
+            flex-wrap: wrap;
+            height: 80vh;
+            justify-content: center;
+            padding-top: 4rem;
+      }
+
+      .text-banner {
+            margin-left: 0;
+            align-items: center;
+            gap: 1rem;
+      }
+
+      .image-banner {
+            height: 40vh;
+      }
+
+      .image-banner img {
+            height: 10vw;
+      }
+
+      .mid p {
+            font-size: 1.2rem;
+      }
+
+
+      .benefits {
+            width: 100%;
+      }
+
+      .benefits li img {
+            height: 2rem;
+      }
+
+      .benefits ul {
+            gap: 1rem;
+      }
+
+      footer {
+            height: 60vh;
+            font-size: 0.9rem;
+      }
+
+      .info {
+            flex-wrap: wrap;
+            justify-content: center;
+            gap: 2rem;
+            height: 50vh;
+      }
 }
