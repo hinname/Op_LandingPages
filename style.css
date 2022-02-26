@@ -47,9 +47,10 @@ header {
   list-style-type: none;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  row-gap: 8%;
-  column-gap: 12%;
+  row-gap: 15%;
+  column-gap: 15%;
   justify-content: center;
+  margin-top: 3rem;
 }
 
 .landingPages a:hover {
@@ -115,5 +116,6 @@ header {
 
   .landingPages ul {
     grid-template-columns: repeat(1, 1fr);
+    row-gap: 8%;
   }
 }
