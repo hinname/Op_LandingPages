@@ -302,3 +302,19 @@ ul.specCategories .specs li {
 i {
   font-size: 1.35rem;
 }
+
+@media screen and (max-width: 1023px) {
+  header {
+    height: auto;
+  }
+
+  .showCaseArea {
+    margin-top: 6rem;
+    margin-bottom: 12rem;
+  }
+
+  .logo {
+    width: 30px;
+    height: 30px;
+  }
+}

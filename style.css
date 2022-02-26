@@ -1,11 +1,36 @@
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+  text-decoration: none;
+}
+
+p,
+h1,
+h2,
+h3,
+a {
+  font-family: Roboto, Arial, sans-serif;
+  text-decoration: none;
+}
+
+body {
+  height: 100vh;
+}
+
 header {
   text-align: center;
+  padding-top: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
 }
 
 .landingPages a {
   text-decoration: none;
   font-size: 1.2rem;
-  color: rgb(52, 110, 216);
+  color: rgb(223, 228, 238);
   transition: 0.2s;
 }
 
@@ -20,16 +45,75 @@ header {
 
 .landingPages ul {
   list-style-type: none;
-  padding: 0;
-  margin: 0;
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-}
-
-.landingPages ul li {
-  padding: 0.5rem 5px;
+  row-gap: 8%;
+  column-gap: 12%;
+  justify-content: center;
 }
 
 .landingPages a:hover {
-  color: rgb(24, 62, 133);
+  color: rgba(205, 221, 252, 0.897);
+}
+
+.label {
+  z-index: 3;
+  position: relative;
+  background-color: rgba(20, 39, 68, 0.945);
+  padding: 1rem 0 1rem;
+  text-align: center;
+}
+
+.whiteCurtain {
+  opacity: 0;
+  z-index: 2;
+  height: 100%;
+  width: 100%;
+  position: relative;
+  background-color: aliceblue;
+}
+
+.whiteCurtain:hover {
+  opacity: 0.3;
+  transition: opacity 0.3s ease-in-out;
+}
+
+.box {
+  z-index: 1;
+  border-radius: 5px;
+  border: 1px solid rgba(43, 40, 40, 0.315);
+}
+
+.herivelton {
+  background: url(./assets/preview_card_game.png) no-repeat center/cover;
+  height: 460px;
+  width: 320px;
+}
+
+.allan {
+  background: url(./assets/preview_pixel_3a.png) no-repeat center/cover;
+  height: 460px;
+  width: 320px;
+}
+
+.milena {
+  background: url(./assets/preview_super_tech.png) no-repeat center/cover;
+  height: 460px;
+  width: 320px;
+}
+
+.rennan {
+  background: url(./assets/preview_pizza_time.png) no-repeat center/cover;
+  height: 460px;
+  width: 320px;
+}
+
+@media screen and (max-width: 1023px) {
+  body {
+    height: auto;
+  }
+
+  .landingPages ul {
+    grid-template-columns: repeat(1, 1fr);
+  }
 }
