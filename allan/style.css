@@ -208,6 +208,7 @@ header h4 {
 
 #bigPhoneImage #allModels {
   display: flex;
+  opacity: 1;
 }
 
 /* Main - Features Photos Area */
