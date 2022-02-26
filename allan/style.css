@@ -1,0 +1,307 @@
+@import url('https://fonts.googleapis.com/css?family=Roboto');
+
+p,
+h1,
+h2,
+h3,
+h4,
+a,
+li,
+ul,
+ol {
+  font-family: Roboto;
+  color: #3c4043;
+  list-style-type: none;
+  text-decoration: none;
+}
+
+html,
+body,
+* {
+  margin: 0;
+  padding: 0;
+}
+
+div {
+  margin: 0;
+  padding: 0;
+}
+
+.button {
+  padding: 0.75rem 1.25rem;
+  border: 3px solid black;
+  border-radius: 0.4rem;
+  font-family: Roboto;
+}
+
+#bigContainer {
+  display: flex;
+  flex-direction: column;
+  background-color: #f1f1f1;
+}
+
+/* Header*/
+
+header {
+  background-color: white;
+  padding: 1rem 1.5rem 0;
+  height: 100vh;
+}
+
+.trueHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 2rem;
+}
+
+.logo {
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+}
+
+.logo img {
+  height: 100%;
+  width: 100%;
+}
+
+#headerShortcuts {
+  display: flex;
+  flex-direction: row;
+  gap: 3rem;
+  align-items: center;
+}
+
+#headerShortcuts *:hover {
+  color: rgb(18, 90, 184);
+  cursor: pointer;
+}
+
+.cart.button {
+  border-color: #4caf50;
+}
+
+.cart p {
+  color: #4caf50;
+}
+
+.cart:hover {
+  border-color: rgb(48, 141, 48) !important;
+}
+
+.cart p:hover {
+  color: rgb(48, 141, 48) !important;
+}
+
+/* Showcase Area*/
+
+.showCaseArea {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  padding: 2rem;
+}
+
+.leftPart {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-self: center;
+}
+
+.leftPart .title h1 {
+  font-size: 3rem;
+}
+
+.subTitle {
+  display: flex;
+  gap: 0.5rem;
+  font-style: italic;
+  font-size: 1.25rem;
+}
+
+.subTitle .yellow {
+  color: #ffc107;
+}
+
+.subTitle .green {
+  color: #4caf50;
+}
+
+.subTitle .blue {
+  color: #0091ea;
+}
+
+.review * {
+  font-style: italic;
+}
+
+.review .quoter {
+  text-indent: 0.75rem;
+  font-weight: 700;
+}
+
+header h4 {
+  margin-bottom: -0.7rem;
+}
+
+.buyingOptions {
+  display: flex;
+  justify-content: space-between;
+  font-weight: 700;
+  margin-bottom: 0.75rem;
+}
+
+.optionsButtons {
+  display: flex;
+  flex-direction: row;
+  gap: 2rem;
+  align-items: center;
+}
+
+.colorOptions {
+  display: flex;
+  flex-direction: row;
+  gap: 1rem;
+  align-items: center;
+}
+
+.circleOption {
+  width: 1.1rem;
+  height: 1.1rem;
+  border: 1.3px solid rgb(130, 130, 130);
+  border-radius: 50%;
+  cursor: pointer;
+}
+
+#purple {
+  background-color: rgba(0, 26, 255, 0.37);
+}
+
+#white {
+  background-color: whitesmoke;
+}
+
+#black {
+  background-color: rgba(0, 0, 0, 0.945);
+}
+
+#colorName {
+  font-family: Roboto;
+  color: #3c4043;
+}
+
+.buy.button {
+  display: inline;
+  background-color: #1a73e8;
+  border-color: #1a73e8;
+  color: white;
+  font-weight: 800;
+  cursor: pointer;
+}
+
+#bigPhoneImage {
+  display: flex;
+  justify-content: center;
+}
+
+#bigPhoneImage img {
+  width: 80%;
+  display: none;
+}
+
+#bigPhoneImage #allModels {
+  display: flex;
+}
+
+/* Main - Features Photos Area */
+
+main {
+  padding: 0;
+  margin-bottom: 3rem;
+}
+
+.marketing {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  background-color: #3c4043;
+}
+
+.marketing div {
+  display: flex;
+  flex-direction: column;
+  gap: 1px;
+  width: 100%;
+  margin: 0 !important;
+  padding: 0 !important;
+}
+
+.marketing * img {
+  width: 100%;
+  height: fit-content;
+}
+
+/* Footer / Bottom */
+
+footer {
+  padding: 1rem 1.5rem 0;
+}
+
+#techSpecs {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  padding: 2rem 4rem 2rem;
+}
+
+#techSpecs .title {
+  font-size: 1.1rem;
+  justify-content: center;
+}
+
+.container {
+  max-width: 60%;
+}
+
+ul.specCategories > li {
+  margin-bottom: 2rem;
+}
+
+ul.specCategories li h3 {
+  font-size: 1.3rem;
+  margin-bottom: 1rem;
+}
+
+ul.specCategories .specs li {
+  margin-bottom: 0.5rem;
+}
+
+.bottom {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  max-width: 100%;
+  padding: 0.75rem 2rem;
+  border-top: 1px solid rgba(40, 46, 46, 0.062);
+}
+
+.bottom * {
+  display: flex;
+  gap: 1rem;
+  align-items: center;
+}
+
+.otherLinks {
+  font-size: 0.8rem;
+  gap: 2rem;
+}
+
+#countryFlag {
+  width: 36px;
+  height: 25.2px;
+}
+
+i {
+  font-size: 1.35rem;
+}
