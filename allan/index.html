@@ -9,14 +9,23 @@
     <link rel="shortcut icon" href="https://www.google.com/favicon.ico" type="image/x-icon">
   </head>
   <body>
-    <div id="bigContainer">
+    <div id="bigContainer" >
       <header>
         <div class="trueHeader">
-          <div class="logo">
-            <a href="https://www.google.com/">
-              <img src="./assets/google_icon_130924.png" alt="G logo">
-            </a>
+          <div class="overlay"></div>
+          
+          <div class="leftHeaderPart">
+            <div class="hamburgerMenu">
+              <div class="bar"></div>
+            </div>
+  
+            <div class="logo">
+              <a href="https://www.google.com/">
+                <img src="./assets/google_icon_130924.png" alt="G logo">
+              </a>
+            </div>
           </div>
+          
 
           <div id="headerShortcuts">
             <a href="https://store.google.com/br/?hl=pt-BR&regionRedirect=true">Store</a>
@@ -24,32 +33,67 @@
             <a href="https://support.google.com/collection/accessories_wall">Accessories</a> 
             <a href="#techSpecs">Tech Specs</a>
             <div class="cart button"> View Cart </div> 
+
           </div>
+
+          <div class="cart button mobile"> View Cart </div> 
+
         </div>
 
 
           <div class="showCaseArea">
             <div class="leftPart">
-              <div class="title">
-                <h1>Pixel 3a</h1>
+              <div class="textArea">
+                <h1 class="title">Pixel 3a</h1>
+               
                 <div class="subTitle">
                   <h3 class="yellow">Premium.</p>
                   <h3 class="green">For</p>
                   <h3 class="blue">Less.</p>
                 </div>
+                
+                <div class="reviewQuote"> 
+                  <div class="review guardian">
+                    <p class="quote">
+                      "The camera is simply better than anything else at this price and so is the software."
+                    </p>
+                    <p class="quoter">-The Guardian</p>
+                  </div>         
+
+                  <div class="review techRadar">
+                    <p class="quote">
+                      "...It feels more like a powerful and impressive mid-range handset in its own right..."
+                    </p>
+                    <p class="quoter">-techradar</p>
+                  </div>  
+
+                  <div class="review tomsGuide">
+                    <p class="quote">
+                      "The Pixel 3a is a steal for those who simply don't want to spend a lot on their next phone and still get a great camera."
+                    </p>
+                    <p class="quoter">-Tom's Guide</p>
+                  </div>  
+
+                  <div class="review androidAuth">
+                    <p class="quote">
+                      "No phone in the Pixel 3a’s class comes close to capturing as nice of photos or matching its update schedule."
+                    </p>
+                    <p class="quoter">-Android Authority</p>
+                  </div>  
+                </div>
               </div>
 
-              <div class="reviewQuote"> 
-                <div class="review guardian">
-                  <p class="quote">
-                    "The camera is simply better than anything else at this price and so is the software."
-                  </p>
-                  <p class="quoter">-The Guardian</p>
-                </div>                
+              <div class="rightPart mobile">
+                <div id="bigPhoneImage">
+                  <img class="allModels" src="./assets/all_models_back.png" alt="all three models pixel 3a"> 
+                  <img class="whiteModel" src="./assets/clearly_white.png" alt="clearly white pixel 3a"> 
+                  <img class="purpleModel" src="./assets/purple_ish.png" alt="purple ish pixel 3a"> 
+                  <img class="blackModel" src="./assets/just-black.png" alt="just black pixel 3a">
+                </div>
               </div>
 
-            <h4>Models</h4>
-
+              <div class="models">
+                <h4>Models</h4>
               <div class="buyingOptions">
                 <div class="storageOptions">
                   <div class="storage1"> <p>64 GB</p></div>
@@ -63,24 +107,25 @@
                     <div class="circleOption" id="black" onclick="blackModel()"></div>
                   </div>
                   <div id="colorName"> Purple-ish</div>
-
                 </div>
-  
-               
               </div>
 
               <div class="buyOption">
                 <div class="buy button">Buy Now</div>
               </div>
+            </div>
+
+
+             
               
             </div>
 
             <div class="rightPart">
               <div id="bigPhoneImage">
-                <img id="allModels" src="./assets/all_models_back.png" alt="all three models pixel 3a"> 
-                <img id="whiteModel" src="./assets/clearly_white.png" alt="clearly white pixel 3a"> 
-                <img id="purpleModel" src="./assets/purple_ish.png" alt="purple ish pixel 3a"> 
-                <img id="blackModel" src="./assets/just-black.png" alt="just black pixel 3a"></div>
+                <img class="allModels" src="./assets/all_models_back.png" alt="all three models pixel 3a"> 
+                <img class="whiteModel" src="./assets/clearly_white.png" alt="clearly white pixel 3a"> 
+                <img class="purpleModel" src="./assets/purple_ish.png" alt="purple ish pixel 3a"> 
+                <img class="blackModel" src="./assets/just-black.png" alt="just black pixel 3a"></div>
             </div>
           </div>
       </header>

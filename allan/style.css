@@ -40,19 +40,38 @@ div {
   background-color: #f1f1f1;
 }
 
+.stopScrolling {
+  height: 100vh;
+  overflow: hidden;
+}
+
 /* Header*/
 
 header {
   background-color: white;
-  padding: 1rem 1.5rem 0;
-  height: 100vh;
+  padding: 2vh 1.5rem;
+  min-height: 100vh;
 }
 
 .trueHeader {
   display: flex;
   justify-content: space-between;
   align-items: center;
-  margin-bottom: 2rem;
+  height: 8vh;
+  padding-bottom: 2vh;
+}
+
+.leftHeaderPart {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  gap: 1rem;
+}
+
+.overlay,
+.hamburgerMenu {
+  display: none;
 }
 
 .logo {
@@ -81,11 +100,17 @@ header {
 .cart.button {
   border-color: #4caf50;
   color: #4caf50;
+  transition: 0.3s;
 }
 
 .cart:hover {
   background-color: #4caf50;
   color: white !important;
+  transition: 0.3s;
+}
+
+.cart.mobile {
+  display: none;
 }
 
 /* Showcase Area*/
@@ -93,18 +118,19 @@ header {
 .showCaseArea {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  padding: 2rem;
+  min-height: 80vh;
+  padding: 8vh 2rem;
 }
 
 .leftPart {
   display: flex;
   flex-direction: column;
-  gap: 1.5rem;
-  align-self: center;
+  justify-content: space-between;
 }
 
-.leftPart .title h1 {
+.leftPart .title {
   font-size: 3rem;
+  padding-bottom: 1vh;
 }
 
 .subTitle {
@@ -112,6 +138,7 @@ header {
   gap: 0.5rem;
   font-style: italic;
   font-size: 1.25rem;
+  padding-bottom: 3vh;
 }
 
 .subTitle .yellow {
@@ -125,18 +152,36 @@ header {
 .subTitle .blue {
   color: #0091ea;
 }
+.reviewQuote {
+  padding-bottom: 1vh;
+}
 
 .review * {
   font-style: italic;
 }
 
+.review .quote {
+  padding-bottom: 1vh;
+}
+
 .review .quoter {
   text-indent: 0.75rem;
   font-weight: 700;
+  padding-bottom: 2vh;
 }
 
-header h4 {
-  margin-bottom: -0.7rem;
+.rightPart.mobile {
+  display: none;
+}
+
+.models {
+  display: flex;
+  flex-direction: column;
+  gap: 3vh;
+}
+
+.models h4 {
+  padding-bottom: 2vh;
 }
 
 .buyingOptions {
@@ -161,9 +206,9 @@ header h4 {
 }
 
 .circleOption {
-  width: 1.1rem;
-  height: 1.1rem;
-  border: 1.3px solid rgb(130, 130, 130);
+  width: 1.25rem;
+  height: 1.25rem;
+  border: 1.5px solid rgb(130, 130, 130);
   border-radius: 50%;
   cursor: pointer;
 }
@@ -185,6 +230,11 @@ header h4 {
   color: #3c4043;
 }
 
+header h4 {
+  margin-bottom: -0.7rem;
+  display: inline;
+}
+
 .buy.button {
   display: inline;
   background-color: #1a73e8;
@@ -192,6 +242,12 @@ header h4 {
   color: white;
   font-weight: 800;
   cursor: pointer;
+}
+
+.rightPart {
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 #bigPhoneImage {
@@ -206,9 +262,10 @@ header h4 {
   opacity: 0;
 }
 
-#bigPhoneImage #allModels {
+#bigPhoneImage .allModels {
   display: flex;
   opacity: 1;
+  align-self: center;
 }
 
 /* Main - Features Photos Area */
@@ -235,7 +292,7 @@ main {
 }
 
 .marketing * img {
-  width: 100%;
+  height: 100;
   height: fit-content;
 }
 
@@ -255,6 +312,7 @@ footer {
 #techSpecs .title {
   font-size: 1.1rem;
   justify-content: center;
+  text-align: center;
 }
 
 .container {
@@ -279,6 +337,7 @@ ul.specCategories .specs li {
   flex-direction: row;
   justify-content: space-between;
   max-width: 100%;
+  height: fit-content;
   padding: 0.75rem 2rem;
   border-top: 1px solid rgba(40, 46, 46, 0.062);
 }
@@ -291,7 +350,7 @@ ul.specCategories .specs li {
 
 .otherLinks {
   font-size: 0.8rem;
-  gap: 2rem;
+  gap: 5%;
 }
 
 #countryFlag {
@@ -303,18 +362,196 @@ i {
   font-size: 1.35rem;
 }
 
-@media screen and (max-width: 1023px) {
+@media screen and (max-width: 870px) {
   header {
-    height: auto;
+    padding: 1rem 0.75rem 0;
   }
 
-  .showCaseArea {
-    margin-top: 6rem;
-    margin-bottom: 12rem;
+  .trueHeader {
+    height: 6vh;
+    margin-bottom: 3vh;
+    padding-bottom: 0;
   }
 
   .logo {
     width: 30px;
     height: 30px;
+  }
+
+  .cart {
+    display: none;
+  }
+
+  .cart.mobile {
+    display: flex;
+  }
+
+  #headerShortcuts {
+    display: none;
+    transform: translateX(100%);
+  }
+
+  #bigContainer.menuActive #headerShortcuts {
+    display: flex;
+    flex-direction: column;
+    position: absolute;
+    left: 0;
+    top: 0;
+    padding: 20vh 20vw 10vh;
+    height: 100vh;
+    box-shadow: 0 0 50px 2px rgba(0, 0, 0, 0.4);
+    background-color: #f1f1f1;
+    z-index: 10;
+    transform: translateX(0%);
+  }
+
+  .hamburgerMenu {
+    position: relative;
+    display: flex;
+    width: 1.5rem;
+    height: 1rem;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    z-index: 11;
+  }
+
+  .hamburgerMenu .bar {
+    position: relative;
+    width: 100%;
+    height: 3px;
+    background-color: #5f6368;
+    border-radius: 3px;
+    opacity: 1;
+  }
+
+  .bar::before,
+  .bar::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-color: #5f6368;
+    border-radius: 3px;
+    transition: 0.5s;
+  }
+
+  .bar::before {
+    transform: translateY(-7px);
+  }
+
+  .bar::after {
+    transform: translateY(7px);
+  }
+
+  #bigcontainer.menuActive .hamburgerMenu .bar {
+    opacity: 0;
+  }
+
+  #bigcontainer.menuActive .bar::before {
+    transform: translateX(0) rotate(-45deg);
+  }
+
+  #bigcontainer.menuActive .bar::after {
+    transform: translateX(0) rotate(45deg);
+  }
+
+  .overlay {
+    display: block;
+    position: fixed;
+    z-index: 10;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: rgba(0, 0, 0, 0.7);
+    opacity: 0;
+    pointer-events: none;
+    transition: 0.2s;
+  }
+
+  #bigContainer.menuActive .overlay {
+    opacity: 1;
+    pointer-events: all;
+  }
+
+  .showCaseArea {
+    min-height: 90vh;
+    margin: 0;
+    padding: 0 0.25rem 0;
+    display: flex;
+    flex-direction: column;
+  }
+
+  .leftPart {
+    gap: 1rem;
+  }
+
+  .review.techRadar {
+    display: none;
+  }
+
+  .rightPart {
+    display: none;
+  }
+
+  .rightPart.mobile {
+    display: flex;
+  }
+
+  #bigPhoneImage img {
+    width: 35vh;
+  }
+
+  #techSpecs {
+    flex-direction: column;
+    padding: 2rem 0.75rem;
+    gap: 2rem;
+  }
+
+  .container {
+    max-width: 100%;
+  }
+
+  footer {
+    padding: 1rem 0.75rem 0;
+  }
+
+  .bottom {
+    padding: 0.5rem 0.5rem 1rem;
+    flex-direction: column;
+    gap: 1rem;
+    max-width: 100%;
+    height: fit-content;
+  }
+
+  .socialMedia {
+    gap: 1.5rem;
+  }
+
+  .socialMedia * {
+    font-size: 1.6rem;
+  }
+
+  .otherLinks {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    max-width: 100%;
+    column-gap: 0;
+    row-gap: 0.5rem;
+  }
+}
+
+@media screen and (max-width: 480px) {
+  .leftPart .title {
+    font-size: 2.75rem;
+  }
+
+  .review {
+    display: none;
+  }
+
+  .review.guardian {
+    display: block;
   }
 }
