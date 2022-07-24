@@ -4,6 +4,8 @@
 
 <hr/>
 
+<h2> Screenshots </h2>
+
 <div align="center">
   <h3> Desktop </h3>
   <img width="75%" src="./allan/assets/screenshots_allan/Screenshot_select-area_20220721004925.png">
