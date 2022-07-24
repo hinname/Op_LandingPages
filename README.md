@@ -6,6 +6,15 @@ Acesse nosso projeto através desse link: https://hinname.github.io/Op_LandingPa
 
 <hr/>
 
+<h3> Links dos Projetos Individuais </h3>
+<a href="https://github.com/hinname/Op_LandingPages/tree/main/herivelton"> Card Fighters </a>
+<a href="https://github.com/hinname/Op_LandingPages/tree/main/allan"> Google Pixel 3a </a>
+<a href="https://github.com/hinname/Op_LandingPages/tree/main/milena"> Bellíssima </a>
+<a href="https://github.com/hinname/Op_LandingPages/tree/main/renan"> Pizza Time </a>
+
+
+<hr/>
+
 <h2> Screenshot </h2>
 <div align="center">
   <img src="./screenshots_landing_page/Screenshot_select-area_20220721004904.png"> 
