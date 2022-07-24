@@ -2,7 +2,7 @@
 
 <h4> Projeto em conjunto com um grupo de quatro desenvolvedores com intuito desenvolvimento de soft-skills, além de fazer as landing pages em si. </h4>
 
-Acesse nosso projeto através desse link: https://hinname.github.io/Op_LandingPages/
+<a href="https://hinname.github.io/Op_LandingPages/"> Clique aqui para acessar nosso projeto. </a> 
 
 <hr/>
 
